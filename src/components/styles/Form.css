@@ -1,0 +1,37 @@
+.formbody{
+   display:flex;
+   flex-direction: column;
+   width: 500px;
+   background-color: rgba(255, 255, 255, 0.425);
+   padding-left: 100px;
+   padding-right: 100px;
+   padding-top: 50px;
+   padding-bottom: 30px;
+   height: 400px;
+   border-radius: 10px;
+   box-shadow: 0 0 5px black;
+}
+
+.backform{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.forminput{
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.forminput input{
+    width: 300px;
+}
+
+.formbody button{
+    border-radius: 10px;
+}
+
+.loginlink :hover{
+    text-decoration: underline;
+}
