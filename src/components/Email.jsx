@@ -4,10 +4,12 @@ import emailjs from "@emailjs/browser";
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify';
+import { useNavigate } from 'react-router-dom';
 import './styles/Email.css'
 
 function Email() {
   const [email,setEmail] = useState('')
+  const navigate = useNavigate()
 
   const emailHandler = () =>{
     try{
@@ -48,6 +50,7 @@ function Email() {
               "VkDdWcg4J7ipzkxpk" // PUBLIC KEY
             ) 
 
+            navigate('/')
           }
           else{
             toast.error(`${res.message}`, {
