@@ -11,7 +11,7 @@ function Email() {
 
   const emailHandler = () =>{
     try{
-      fetch("http://localhost:4000/sendemail", {
+      fetch("https://passwordreset-backend-k9az.onrender.com/sendemail", {
           method: "POSt", 
           headers: {
               'Access-Control-Allow-Origin':true,

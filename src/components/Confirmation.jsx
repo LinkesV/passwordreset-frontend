@@ -12,7 +12,7 @@ function Confirmation() {
   const [otp, setOTP] = useState('')
   const otphandler = () =>{
     try{
-      fetch("http://localhost:4000/checkotp", {
+      fetch("https://passwordreset-backend-k9az.onrender.com/checkotp", {
           method: "POST", 
           headers: {
               'Access-Control-Allow-Origin':true,

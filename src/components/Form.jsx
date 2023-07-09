@@ -15,7 +15,7 @@ function Form() {
 
     const submitHandler = () => {
       try{
-        fetch("http://localhost:4000/login", {
+        fetch("https://passwordreset-backend-k9az.onrender.com/login", {
             method: "POST", 
             headers: {
                 'Access-Control-Allow-Origin':true,
