@@ -41,7 +41,7 @@ function Email() {
                 username: res.username,
                 message: `
                 Your OTP IS ${res.OTP}
-                Click on this url to proceed: http://localhost:3000/resetpsw/${res.username}
+                Click on this url to proceed: https://gentle-kheer-754bc5.netlify.app/${res.username}
                 `
               },
 
