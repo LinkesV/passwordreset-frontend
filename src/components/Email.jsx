@@ -50,12 +50,15 @@ function Email() {
               "VkDdWcg4J7ipzkxpk" // PUBLIC KEY
             ) 
 
-            navigate('/')
+            navigate(`/resetpsw/${res.username}`)
           }
           else{
-            toast.error(`${res.message}`, {
-              position: toast.POSITION.TOP_RIGHT
-          });
+            setTimeout(() => {
+              toast.success(`${res.message}`, {
+                  position: toast.POSITION.TOP_RIGHT,
+                  toastId: 'otpsent'
+              });
+            }, 1);
           }
       })
   }
@@ -72,7 +75,6 @@ function Email() {
             <input type="text" id="email" name="email" onChange={(e)=>{setEmail(e.target.value)}} placeholder='Enter your email to recieve OTP code'/><br></br>
         <button type='submit' onClick={emailHandler} class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-fulld">Send OTP code</button><br></br>
     </div>
-      <ToastContainer/>
     </div>
   )
 }
