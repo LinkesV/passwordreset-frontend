@@ -28,7 +28,7 @@ function NewUser() {
                 return res.json()
             })
             .then((res)=>{ 
-                if(res.message != undefined){
+                if(res.message !== undefined){
                     
                     navigate('/')
                     setTimeout(() => {

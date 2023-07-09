@@ -8,7 +8,7 @@ import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './styles/Form.css'
 function Form() {
-    const [details,setdetails] = useContext(data)
+    const [,setdetails] = useContext(data)
     const navigate = useNavigate()
     const [email,setEmail] = useState('')
     const [psw,setPsw] = useState('')
